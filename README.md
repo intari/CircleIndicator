@@ -1,3 +1,6 @@
+Modifed based on https://github.com/surfstudio/InfinitePageIndicator to use with InfinityPager
+
+---
 CircleIndicator
 ===============
 A lightweight viewpager indicator like in nexus 5 launcher 
