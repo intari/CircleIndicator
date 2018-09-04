@@ -1,4 +1,4 @@
-package net.intari.circleindicator;
+package net.intari.circleindicatorenhanced;
 
 import android.animation.Animator;
 import android.animation.AnimatorInflater;

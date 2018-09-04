@@ -1,4 +1,4 @@
-package net.intari.circleindicator.sample;
+package net.intari.circleindicatorenhanced.sample;
 
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;

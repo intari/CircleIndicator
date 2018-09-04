@@ -1,4 +1,4 @@
-package net.intari.circleindicator;
+package net.intari.circleindicatorenhanced;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;

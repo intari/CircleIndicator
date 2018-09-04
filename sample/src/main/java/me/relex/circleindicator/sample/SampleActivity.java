@@ -1,4 +1,4 @@
-package net.intari.circleindicator.sample;
+package net.intari.circleindicatorenhanced.sample;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,14 +16,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
-import net.intari.circleindicator.sample.fragment.ChangeColorFragment;
-import net.intari.circleindicator.sample.fragment.CustomAnimationFragment;
-import net.intari.circleindicator.sample.fragment.DefaultFragment;
-import net.intari.circleindicator.sample.fragment.DynamicAdapterFragment;
-import net.intari.circleindicator.sample.fragment.InfiniteFragment;
-import net.intari.circleindicator.sample.fragment.LoopViewPagerFragment;
-import net.intari.circleindicator.sample.fragment.ResetAdapterFragment;
-import net.intari.circleindicator.sample.fragment.SnackbarBehaviorFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.ChangeColorFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.CustomAnimationFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.DefaultFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.DynamicAdapterFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.InfiniteFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.LoopViewPagerFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.ResetAdapterFragment;
+import net.intari.circleindicatorenhanced.sample.fragment.SnackbarBehaviorFragment;
 
 public class SampleActivity extends AppCompatActivity {
 

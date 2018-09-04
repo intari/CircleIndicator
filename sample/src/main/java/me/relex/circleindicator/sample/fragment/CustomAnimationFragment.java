@@ -1,4 +1,4 @@
-package net.intari.circleindicator.sample.fragment;
+package net.intari.circleindicatorenhanced.sample.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,9 +7,9 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import net.intari.circleindicator.CircleIndicator;
-import net.intari.circleindicator.sample.SamplePagerAdapter;
-import net.intari.circleindicator.sample.R;
+import net.intari.circleindicatorenhanced.CircleIndicator;
+import net.intari.circleindicatorenhanced.sample.SamplePagerAdapter;
+import net.intari.circleindicatorenhanced.sample.R;
 
 public class CustomAnimationFragment extends Fragment {
 

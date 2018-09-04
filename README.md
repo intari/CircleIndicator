@@ -25,7 +25,7 @@ dependencies {
 Usage
 --------
 ```xml
-	<net.intari.circleindicator.CircleIndicator
+	<net.intari.circleindicatorenhanced.CircleIndicator
 		android:id="@+id/indicator"
         android:layout_width="match_parent"
         android:layout_height="48dp"/>
