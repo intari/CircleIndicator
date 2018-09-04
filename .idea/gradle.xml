@@ -9,8 +9,8 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/LoopingViewPager" />
-            <option value="$PROJECT_DIR$/circleindicatorenhanced" />
             <option value="$PROJECT_DIR$/sample" />
+            <option value="$PROJECT_DIR$/СircleIndicatorEnhanced" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
