@@ -6,6 +6,7 @@ A lightweight viewpager indicator like in nexus 5 launcher
 Code modified to work with InfiniteViewPager (based on  https://github.com/surfstudio/InfinitePageIndicator to use with InfinityPager).
 
 New sample fragment added.
+[ ![Download](https://jitpack.io/v/net.intari/CircleIndicator.svg) ](https://jitpack.io/#net.intari/CircleIndicator/)
 
 original project - https://github.com/ongakuer/CircleIndicator
 
