@@ -1,5 +1,8 @@
 ChangeLog
 --------
+##### 1.2.5
+* change fork's package name me.relex. - > net.intari. to avoid conflicts with original
+
 ##### 1.2.4
 * Added support for InfinityViewPager + sample
 * Removed all repos except Jitpack
