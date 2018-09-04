@@ -1,14 +1,13 @@
 
 ---
 CircleIndicator (with support for InfinityPager)
-
-
 ===============
 A lightweight viewpager indicator like in nexus 5 launcher 
 Code modified to work with InfiniteViewPager (based on  https://github.com/surfstudio/InfinitePageIndicator to use with InfinityPager).
 
 New sample fragment added.
 
+original project - https://github.com/ongakuer/CircleIndicator
 
 [ ![Download](https://api.bintray.com/packages/ongakuer/maven/CircleIndicator/images/download.svg) ](https://bintray.com/ongakuer/maven/CircleIndicator/_latestVersion)
 
@@ -16,9 +15,22 @@ New sample fragment added.
 
 Gradle
 ------------
+Add it in your root build.gradle at the end of repositories:
+
+```groovy
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+Add the dependency
+
 ```groovy
 dependencies {
-    compile 'me.relex:circleindicator:1.2.2@aar'
+    compile 'net.intari:circleindicator:1.2.5@aar'
 }
 ```
 
