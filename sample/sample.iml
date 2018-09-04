@@ -118,7 +118,7 @@
     <orderEntry type="library" name="Gradle: com.android.support:support-core-utils-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: com.android.support:support-v13-27.1.1" level="project" />
     <orderEntry type="library" name="Gradle: android.arch.lifecycle:runtime-1.1.0" level="project" />
+    <orderEntry type="module" module-name="circleindicatorenhanced" />
     <orderEntry type="module" module-name="LoopingViewPager" />
-    <orderEntry type="module" module-name="circleindicator" />
   </component>
 </module>

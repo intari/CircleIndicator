@@ -9,11 +9,7 @@ New sample fragment added.
 
 [ ![Download](https://jitpack.io/v/net.intari/CircleIndicator.svg) ](https://jitpack.io/#net.intari/CircleIndicator/)
 
-original project - https://github.com/ongakuer/CircleIndicator
-
-[ ![Download](https://api.bintray.com/packages/ongakuer/maven/CircleIndicator/images/download.svg) ](https://bintray.com/ongakuer/maven/CircleIndicator/_latestVersion)
-
-![CircleIndicator](/screenshot.gif)
+This is fork of  https://github.com/ongakuer/CircleIndicator 
 
 Gradle
 ------------
@@ -32,7 +28,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'net.intari:circleindicator:1.2.7@aar'
+    compile 'net.intari:circleindicatorenhanced:1.2.8@aar'
 }
 ```
 
@@ -79,7 +75,7 @@ mAdapter.registerDataSetObserver(indicator.getDataSetObserver());
 License
 --------
 ```
-Copyright (C) 2014 relex
+Copyright (C) 2014 relex, (C) 2018 intari
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
