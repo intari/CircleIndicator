@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/CircleIndicatorEnhanced/CircleIndicatorEnhanced.iml" filepath="$PROJECT_DIR$/CircleIndicatorEnhanced/CircleIndicatorEnhanced.iml" />
       <module fileurl="file://$PROJECT_DIR$/CircleIndicatorHacks.iml" filepath="$PROJECT_DIR$/CircleIndicatorHacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/LoopingViewPager/LoopingViewPager.iml" filepath="$PROJECT_DIR$/LoopingViewPager/LoopingViewPager.iml" />
       <module fileurl="file://$PROJECT_DIR$/sample/sample.iml" filepath="$PROJECT_DIR$/sample/sample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/СircleIndicatorEnhanced/СircleIndicatorEnhanced.iml" filepath="$PROJECT_DIR$/СircleIndicatorEnhanced/СircleIndicatorEnhanced.iml" />
     </modules>
   </component>
 </project>

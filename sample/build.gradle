@@ -35,6 +35,6 @@ dependencies {
 
     implementation 'com.github.antonyt:InfiniteViewPager:v1.0.0'
 
-    compile project(':СircleIndicatorEnhanced')
+    compile project(':CircleIndicatorEnhanced')
     compile project(':LoopingViewPager')
 }

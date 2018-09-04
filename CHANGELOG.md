@@ -1,5 +1,9 @@
 ChangeLog
 --------
+Enhanced
+##### 1.2.30
+* This fork now have new name too, to avoid conflicts with original
+
 ##### 1.2.5
 * change fork's package name me.relex. - > net.intari. to avoid conflicts with original
 

@@ -7,7 +7,7 @@ Code modified to work with InfiniteViewPager (based on  https://github.com/surfs
 
 New sample fragment added.
 
-[ ![Download](https://jitpack.io/v/net.intari/CircleIndicator.svg) ](https://jitpack.io/#net.intari/CircleIndicator/)
+[ ![Download](https://jitpack.io/v/net.intari/CircleIndicatorEnhanced.svg) ](https://jitpack.io/#net.intari/CircleIndicatorEnhanced/)
 
 This is fork of  https://github.com/ongakuer/CircleIndicator 
 
@@ -28,7 +28,7 @@ Add the dependency
 
 ```groovy
 dependencies {
-    compile 'net.intari:circleindicatorenhanced:1.2.8@aar'
+    compile 'net.intari:CircleIndicatorEnhanced:1.2.30@aar'
 }
 ```
 

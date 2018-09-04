@@ -1,1 +1,1 @@
-include ':СircleIndicatorEnhanced', ':sample', ':LoopingViewPager'
+include ':CircleIndicatorEnhanced', ':sample', ':LoopingViewPager'
