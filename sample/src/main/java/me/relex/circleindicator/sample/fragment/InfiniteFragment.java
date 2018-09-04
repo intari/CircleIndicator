@@ -1,4 +1,4 @@
-package me.relex.circleindicator.sample.fragment;
+package net.intari.circleindicator.sample.fragment;
 
 
 import android.os.Bundle;
@@ -12,9 +12,9 @@ import android.view.ViewGroup;
 
 import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
 
-import me.relex.circleindicator.CircleIndicator;
-import me.relex.circleindicator.sample.SamplePagerAdapter;
-import me.relex.circleindicator.sample.R;
+import net.intari.circleindicator.CircleIndicator;
+import net.intari.circleindicator.sample.SamplePagerAdapter;
+import net.intari.circleindicator.sample.R;
 /**
  * Created by Dmitriy Kazimirov on 04.09.2018.
  */

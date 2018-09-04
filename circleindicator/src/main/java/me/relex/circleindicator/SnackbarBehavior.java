@@ -1,4 +1,4 @@
-package me.relex.circleindicator;
+package net.intari.circleindicator;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;

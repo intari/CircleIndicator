@@ -18,11 +18,11 @@
         android:layout_gravity="top"
         android:text="@string/toggle_snackbar"/>
 
-    <me.relex.circleindicator.CircleIndicator
+    <net.intari.circleindicator.CircleIndicator
         android:id="@id/indicator"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_gravity="bottom"
-        app:layout_behavior="me.relex.circleindicator.SnackbarBehavior"/>
+        app:layout_behavior="net.intari.circleindicator.SnackbarBehavior"/>
 
 </android.support.design.widget.CoordinatorLayout>

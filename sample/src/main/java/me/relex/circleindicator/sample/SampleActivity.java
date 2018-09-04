@@ -1,4 +1,4 @@
-package me.relex.circleindicator.sample;
+package net.intari.circleindicator.sample;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -16,14 +16,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
-import me.relex.circleindicator.sample.fragment.ChangeColorFragment;
-import me.relex.circleindicator.sample.fragment.CustomAnimationFragment;
-import me.relex.circleindicator.sample.fragment.DefaultFragment;
-import me.relex.circleindicator.sample.fragment.DynamicAdapterFragment;
-import me.relex.circleindicator.sample.fragment.InfiniteFragment;
-import me.relex.circleindicator.sample.fragment.LoopViewPagerFragment;
-import me.relex.circleindicator.sample.fragment.ResetAdapterFragment;
-import me.relex.circleindicator.sample.fragment.SnackbarBehaviorFragment;
+import net.intari.circleindicator.sample.fragment.ChangeColorFragment;
+import net.intari.circleindicator.sample.fragment.CustomAnimationFragment;
+import net.intari.circleindicator.sample.fragment.DefaultFragment;
+import net.intari.circleindicator.sample.fragment.DynamicAdapterFragment;
+import net.intari.circleindicator.sample.fragment.InfiniteFragment;
+import net.intari.circleindicator.sample.fragment.LoopViewPagerFragment;
+import net.intari.circleindicator.sample.fragment.ResetAdapterFragment;
+import net.intari.circleindicator.sample.fragment.SnackbarBehaviorFragment;
 
 public class SampleActivity extends AppCompatActivity {
 

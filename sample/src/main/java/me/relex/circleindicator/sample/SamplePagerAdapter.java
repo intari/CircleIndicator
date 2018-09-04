@@ -1,4 +1,4 @@
-package me.relex.circleindicator.sample;
+package net.intari.circleindicator.sample;
 
 import android.graphics.Color;
 import android.support.v4.view.PagerAdapter;
