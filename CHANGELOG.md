@@ -1,5 +1,8 @@
 ChangeLog
 --------
+##### 1.2.4
+* Added support for InfinityViewPager + sample
+* Removed all repos except Jitpack
 
 ##### 1.2.2   
 * Fix bug ([#69](https://github.com/ongakuer/CircleIndicator/issues/69))
