@@ -33,6 +33,3 @@ dependencies {
     implementation 'com.github.antonyt:InfiniteViewPager:v1.0.0'
 
 }
-
-//apply from: "upload-jcenter.gradle"
-//apply from: "upload-maven.gradle"
