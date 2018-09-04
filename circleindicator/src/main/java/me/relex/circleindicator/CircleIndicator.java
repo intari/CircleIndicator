@@ -16,8 +16,15 @@ import android.view.View;
 import android.view.animation.Interpolator;
 import android.widget.LinearLayout;
 
+import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
+import com.antonyt.infiniteviewpager.InfiniteViewPager;
+
 import static android.support.v4.view.ViewPager.OnPageChangeListener;
 
+/**
+ * This code was modified by Dmitriy Kazimirov
+ * based on https://github.com/surfstudio/InfinitePageIndicator so it work correctly when pager's adapter is instance of InfinitePagerAdapter !!!!
+ */
 public class CircleIndicator extends LinearLayout {
 
     private final static int DEFAULT_INDICATOR_WIDTH = 5;
@@ -33,6 +40,7 @@ public class CircleIndicator extends LinearLayout {
     private Animator mAnimatorIn;
     private Animator mImmediateAnimatorOut;
     private Animator mImmediateAnimatorIn;
+    private boolean mUseInfiniteLogic;
 
     private int mLastPosition = -1;
 
@@ -163,6 +171,12 @@ public class CircleIndicator extends LinearLayout {
         mViewpager = viewPager;
         if (mViewpager != null && mViewpager.getAdapter() != null) {
             mLastPosition = -1;
+
+            if (mViewpager.getClass().isAssignableFrom(InfiniteViewPager.class)) {
+                mUseInfiniteLogic=true;
+            } else {
+                mUseInfiniteLogic=false;
+            }
             createIndicators();
             mViewpager.removeOnPageChangeListener(mInternalPageChangeListener);
             mViewpager.addOnPageChangeListener(mInternalPageChangeListener);
@@ -178,8 +192,22 @@ public class CircleIndicator extends LinearLayout {
 
         @Override public void onPageSelected(int position) {
 
-            if (mViewpager.getAdapter() == null || mViewpager.getAdapter().getCount() <= 0) {
+            if (mViewpager.getAdapter() == null) {
                 return;
+            }
+            if (mUseInfiniteLogic) {
+                InfinitePagerAdapter infinitePagerAdapter=(InfinitePagerAdapter)mViewpager.getAdapter();
+                if  (infinitePagerAdapter.getRealCount() <= 0) {
+                    return;
+                }
+                //calculate virtual position from real
+                position = position % infinitePagerAdapter.getRealCount();
+
+            } else {
+                if (mViewpager.getAdapter().getCount() <= 0) {
+                    return;
+                }
+
             }
 
             if (mAnimatorIn.isRunning()) {
@@ -222,8 +250,15 @@ public class CircleIndicator extends LinearLayout {
             if (mViewpager == null) {
                 return;
             }
+            int newCount;
+            if (mUseInfiniteLogic) {
+                InfinitePagerAdapter infinitePagerAdapter=(InfinitePagerAdapter)mViewpager.getAdapter();
+                newCount = infinitePagerAdapter.getRealCount();
 
-            int newCount = mViewpager.getAdapter().getCount();
+            } else {
+                 newCount = mViewpager.getAdapter().getCount();
+
+            }
             int currentCount = getChildCount();
 
             if (newCount == currentCount) {  // No change
@@ -251,7 +286,13 @@ public class CircleIndicator extends LinearLayout {
 
     private void createIndicators() {
         removeAllViews();
-        int count = mViewpager.getAdapter().getCount();
+        int count;
+        if (mUseInfiniteLogic) {
+            InfinitePagerAdapter infinitePagerAdapter=(InfinitePagerAdapter)mViewpager.getAdapter();
+            count = infinitePagerAdapter.getRealCount();
+        } else {
+            count = mViewpager.getAdapter().getCount();
+        }
         if (count <= 0) {
             return;
         }

@@ -1,15 +1,15 @@
 apply plugin: 'com.android.library'
 
-version = "1.2.2"
+version = "1.2.3"
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
 
     defaultConfig {
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 24
-        versionCode 122
+        versionCode 123
         versionName version
     }
 
@@ -22,9 +22,16 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-annotations:24.2.1'
-    compile 'com.android.support:support-core-ui:24.2.1'
-    provided 'com.android.support:design:24.2.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:support-annotations:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-v13:27.1.1'
+
+    compileOnly 'com.android.support:design:27.1.1'
+    implementation 'com.github.antonyt:InfiniteViewPager:v1.0.0'
+
 }
 
 //apply from: "upload-jcenter.gradle"

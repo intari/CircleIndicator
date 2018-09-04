@@ -1,9 +1,14 @@
-Modifed based on https://github.com/surfstudio/InfinitePageIndicator to use with InfinityPager
 
 ---
-CircleIndicator
+CircleIndicator (with support for InfinityPager)
+
+
 ===============
 A lightweight viewpager indicator like in nexus 5 launcher 
+Code modified to work with InfiniteViewPager (based on  https://github.com/surfstudio/InfinitePageIndicator to use with InfinityPager).
+
+New sample fragment added.
+
 
 [ ![Download](https://api.bintray.com/packages/ongakuer/maven/CircleIndicator/images/download.svg) ](https://bintray.com/ongakuer/maven/CircleIndicator/_latestVersion)
 

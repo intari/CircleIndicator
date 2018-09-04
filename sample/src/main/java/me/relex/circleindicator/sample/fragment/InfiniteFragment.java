@@ -1,5 +1,6 @@
 package me.relex.circleindicator.sample.fragment;
 
+
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,24 +15,24 @@ import com.antonyt.infiniteviewpager.InfinitePagerAdapter;
 import me.relex.circleindicator.CircleIndicator;
 import me.relex.circleindicator.sample.SamplePagerAdapter;
 import me.relex.circleindicator.sample.R;
+/**
+ * Created by Dmitriy Kazimirov on 04.09.2018.
+ */
+public class InfiniteFragment extends Fragment {
 
-
-public class DefaultFragment extends Fragment {
-
-    @Nullable @Override
+    @Nullable
+    @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
-            @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_sample_default, container, false);
+                             @Nullable Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_sample_infinite, container, false);
     }
 
     @Override public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         ViewPager viewpager = (ViewPager) view.findViewById(R.id.viewpager);
-        CircleIndicator indicator = (CircleIndicator) view.findViewById(R.id.indicator);
+        final CircleIndicator indicator = (CircleIndicator) view.findViewById(R.id.indicator);
 
-        PagerAdapter wrappedAdapter = new InfinitePagerAdapter(new SamplePagerAdapter());
+        InfinitePagerAdapter wrappedAdapter = new InfinitePagerAdapter(new SamplePagerAdapter());
         viewpager.setAdapter(wrappedAdapter);
-
         indicator.setViewPager(viewpager);
-        viewpager.setCurrentItem(2);
     }
 }
